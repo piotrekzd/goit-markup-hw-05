@@ -61,6 +61,7 @@ p {
 }
 
 .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
@@ -372,6 +373,7 @@ p {
   height: 44px;
   border-radius: 50%;
   fill: var(--social-icon);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-link:not(:last-child) {
@@ -410,6 +412,7 @@ p {
   align-items: center;
   justify-content: center;
   fill: var(--social-icon);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--clients-icon);
   border-radius: 4px;
 }
@@ -449,6 +452,7 @@ p {
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--button-list-item-color);
 }
 
@@ -496,6 +500,7 @@ p {
 .picture-list-card {
   height: 404px;
   background: var(--white-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .picture-list-card:hover {
@@ -604,6 +609,7 @@ p {
   justify-content: center;
   text-decoration: none;
   fill: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--footer-social-icons);
   border-radius: 50%;
 }
@@ -626,6 +632,7 @@ p {
   animation: changeBg;
   animation-timing-function: linear;
   animation-play-state: paused;
+  background: var(--white-color);
 }
 
 .order-button:active {
@@ -651,6 +658,9 @@ p {
   right: 8px;
   width: 30px;
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: var(--black-color);
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
