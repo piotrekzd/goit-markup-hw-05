@@ -626,17 +626,15 @@ p {
 
 /* footer-end */
 
-/* modal */
+/* modal backdrop */
 
-.body {
-  animation: changeBg;
-  animation-timing-function: linear;
-  animation-play-state: paused;
-  background: var(--white-color);
-}
-
-.order-button:active {
-  animation-name: changeBg;
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .modal {
@@ -674,12 +672,4 @@ p {
   pointer-events: none;
 }
 
-@keyframes changeBg {
-  0% {
-    background: var(--white-color);
-  }
-
-  100% {
-    background: rgba(0, 0, 0, 0.2);
-  }
-}
+/* modal backdrop-end */
